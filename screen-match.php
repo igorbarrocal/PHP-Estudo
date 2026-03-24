@@ -4,6 +4,7 @@ echo "Bem-vindo ao screen match!\n";
 // \n é um caractere de nova linha, que quebra a linha e move o cursor para a próxima linha
 // \t é um caractere de tabulação, que adiciona um espaço horizontal para alinhar o texto
 
+//Variaveis 
 $nomeFilme = "Top Gun - Maverick";
 $anoLancamento = 2022;
 
