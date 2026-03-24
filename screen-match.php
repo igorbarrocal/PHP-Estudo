@@ -6,6 +6,9 @@ echo "Bem-vindo ao screen match!\n";
 
 //Variaveis 
 $nomeFilme = "Top Gun - Maverick";
+$nomeFilme = "Top Gun - Maverick";
+$nomeFilme = "Top Gun - Maverick";
+
 $anoLancamento = $argv[1] ?? 2022; // $argv é um array que contém os argumentos passados para o script PHP a partir da linha de comando
 // ?? é o operador de coalescência nula, que retorna o valor à esquerda se não for nulo, caso contrário, retorna o valor à direita
 
@@ -30,3 +33,16 @@ $incluidoNoPlano = $planoPrime && $anoLancamento < 2020;
 echo "Nome do filme: ".$nomeFilme."\n";
 echo "Nota do Filme: $notaFilme\n";
 echo "Ano de lançamento: $anoLancamento\n";
+
+if ($anoLancamento > 2022) {
+    echo "Esse fime è um lançamento";
+} elseif ($anoLancamento > 2020 && $anoLancamento <= 2022) {
+    echo "Esse filme ainda e novo";
+
+}else{
+    echo "Esse filme não é um lançamento";
+
+}
+// if é uma estrutura de controle que executa um bloco de código se a condição for verdadeira
+// elseif é uma estrutura de controle que executa um bloco de código se a condição anterior for
+// else é uma estrutura de controle que executa um bloco de código se todas as condições anteriores forem falsas
