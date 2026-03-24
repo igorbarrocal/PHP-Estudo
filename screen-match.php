@@ -72,4 +72,26 @@ $genero = match ($nomeFilme) {
 echo "Gênero do filme: $genero\n";
 // match é uma estrutura de controle que compara um valor com vários casos e executa o bloco de código correspondente ao caso que corresponde ao valor
 
-echo $argc;
+//var_dump($argv);
+// var_dump é uma função que exibe informações sobre uma variável, incluindo seu tipo e valor
+
+//$notasParaOFilme = array(
+  //  10,
+  //  8 , 
+  //  9, 
+  //  7.5, 
+ //   5, 
+  //  6.8
+//); // [] é a sintaxe para criar um array em PHP
+// $notasParaOFilme é uma variável que contém um array de notas para o filme
+
+//var_dump($notasParaOFilme); //Forma para definir um array em PHP, onde cada elemento é separado por vírgula e o array é delimitado por colchetes
+
+$filme = [
+    "Thor: Ragnarok",
+    2021,
+    7.8,
+    "Super-Herói"
+];
+
+echo $filme[0];; 
