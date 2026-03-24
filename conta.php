@@ -1,10 +1,10 @@
 <?php
 
 // Saldo inicial da conta
-$saldo = 1000;
+$saldo = 2000;
 
 // Nome do titular
-$titular = "Vinicius Dias";
+$titular = "Igor Dias";
 
 // Estrutura de repetição: o menu vai rodar até o usuário escolher sair (opção 4)
 do {
