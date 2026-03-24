@@ -36,7 +36,7 @@ do {
 
         case 2:
             // Saque de dinheiro
-            echo "Digite o valor para saque: ";
+            echo "Digite o valor para saque:\n ";
 
             // Lê o valor digitado e converte para número decimal (float)
             $saque = (float) fgets(STDIN);
@@ -53,7 +53,7 @@ do {
 
         case 3:
             // Depósito de dinheiro
-            echo "Digite o valor para depósito: ";
+            echo "Digite o valor para depósito:\n ";
 
             // Lê o valor digitado
             $deposito = (float) fgets(STDIN);
