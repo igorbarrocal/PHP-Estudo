@@ -27,6 +27,16 @@ for ($contator = 1; $contator < $argc; $contator++) {
     $somaDeNotas += $argv[$contator];
 }
 
+//do {
+    //alguma acao
+//} while (condicao);
+
+
+//$contador = 1;
+//while($argv[$contador] != 0) {
+   // $somaDeNotas += $argv[$contador++];
+//}
+
 $notaFilme = $somaDeNotas / $quantidadeDeNotas; // $argc é uma variável que contém o número de argumentos passados para o script PHP a partir da linha de comando, incluindo o nome do script
 $planoPrime = true;
 
