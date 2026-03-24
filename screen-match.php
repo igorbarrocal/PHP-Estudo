@@ -9,20 +9,25 @@ echo "Bem-vindo ao screen match!\n";
 //$nomeFilme = "Thor: Ragnarok";
 $nomeFilme = "Top Gun - Maverick"; 
 
-$anoLancamento = $argv[1] ?? 2022; // $argv é um array que contém os argumentos passados para o script PHP a partir da linha de comando
+$anoLancamento =  2022; // $argv é um array que contém os argumentos passados para o script PHP a partir da linha de comando
 // ?? é o operador de coalescência nula, que retorna o valor à esquerda se não for nulo, caso contrário, retorna o valor à direita
 
-$somaDeNotas = 9;
-$somaDeNotas += 6;
-$somaDeNotas += 8;
-$somaDeNotas += 7.5;
-$somaDeNotas += 5;
+$quantidadeDeNotas = $argc - 1; // $argc é uma variável que contém o número de argumentos passados para o script PHP a partir da linha de comando, incluindo o nome do script
+$somaDeNotas = 0;
 // += é um operador de atribuição que soma o valor à variável existente
 // *= é um operador de atribuição que multiplica o valor à variável existente
 // -= é um operador de atribuição que subtrai o valor da variável existente
 // /= é um operador de atribuição que divide o valor da variável existente pelo valor fornecido
 
-$notaFilme = $somaDeNotas / 5;
+//$somaDeNotas += $argv[1];
+//$somaDeNotas += $argv[2];
+//$somaDeNotas += $argv[3];
+
+for ($contator = 1; $contator < $argc; $contator++) {
+    $somaDeNotas += $argv[$contator];
+}
+
+$notaFilme = $somaDeNotas / $quantidadeDeNotas; // $argc é uma variável que contém o número de argumentos passados para o script PHP a partir da linha de comando, incluindo o nome do script
 $planoPrime = true;
 
 $incluidoNoPlano = $planoPrime && $anoLancamento < 2020;
@@ -54,6 +59,7 @@ $genero = match ($nomeFilme) {
     "Se Beber, Não Case!" => "Comédia",
     default => "Gênero desconhecido"
 };
-echo "Gênero do filme: $genero";
-
+echo "Gênero do filme: $genero\n";
 // match é uma estrutura de controle que compara um valor com vários casos e executa o bloco de código correspondente ao caso que corresponde ao valor
+
+echo $argc;
