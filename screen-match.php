@@ -6,7 +6,8 @@ echo "Bem-vindo ao screen match!\n";
 
 //Variaveis 
 $nomeFilme = "Top Gun - Maverick";
-$anoLancamento = 2022;
+$anoLancamento = $argv[1] ?? 2022; // $argv é um array que contém os argumentos passados para o script PHP a partir da linha de comando
+// ?? é o operador de coalescência nula, que retorna o valor à esquerda se não for nulo, caso contrário, retorna o valor à direita
 
 $somaDeNotas = 9;
 $somaDeNotas += 6;
@@ -28,3 +29,4 @@ $incluidoNoPlano = $planoPrime && $anoLancamento < 2020;
 
 echo "Nome do filme: ".$nomeFilme."\n";
 echo "Nota do Filme: $notaFilme\n";
+echo "Ano de lançamento: $anoLancamento\n";
